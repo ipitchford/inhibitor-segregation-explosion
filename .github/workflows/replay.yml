@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT
+name: Replay
+on:
+  push:
+  pull_request:
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check SHA256SUMS
+        run: sha256sum -c SHA256SUMS
+      - name: Exact checks (standard library)
+        run: python3 -B run_checks.py
+      - name: Exact checks under -O
+        run: python3 -B -O run_checks.py
+      - name: NumPy checks (estimator and quick enclosure)
+        run: pip install numpy==2.3.5 && python3 -B run_checks.py --numpy
+      - name: Semantic negative controls
+        run: python3 -B negative_controls.py
+      - name: Working tree unchanged
+        run: test -z "$(git status --porcelain)"

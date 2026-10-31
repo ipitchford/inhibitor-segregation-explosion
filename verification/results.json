@@ -1,0 +1,162 @@
+{
+  "status": "PASS",
+  "exact_checks": 4311,
+  "scheduled_removal_pgf_checks": 100,
+  "negative_controls_rejected": {
+    "divide_by_S_minus_one": true,
+    "double_fragmentation_probabilities": true,
+    "retention_used_as_loss_probability": true,
+    "omit_Yule_variance_term": true
+  },
+  "fingerprints": [
+    {
+      "model": "catalytic",
+      "state": [
+        2,
+        0
+      ],
+      "physical": [
+        "4",
+        "2",
+        "0"
+      ],
+      "operational": [
+        "2",
+        "1",
+        "0"
+      ]
+    },
+    {
+      "model": "catalytic",
+      "state": [
+        2,
+        1
+      ],
+      "physical": [
+        "4",
+        "2",
+        "2"
+      ],
+      "operational": [
+        "2",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "model": "catalytic",
+      "state": [
+        3,
+        2
+      ],
+      "physical": [
+        "12",
+        "3",
+        "12"
+      ],
+      "operational": [
+        "4",
+        "1",
+        "4"
+      ]
+    },
+    {
+      "model": "catalytic",
+      "state": [
+        4,
+        3
+      ],
+      "physical": [
+        "24",
+        "4",
+        "36"
+      ],
+      "operational": [
+        "6",
+        "1",
+        "9"
+      ]
+    },
+    {
+      "model": "conversion",
+      "state": [
+        2,
+        0
+      ],
+      "physical": [
+        "4",
+        "2",
+        "0"
+      ],
+      "operational": [
+        "2",
+        "1",
+        "0"
+      ]
+    },
+    {
+      "model": "conversion",
+      "state": [
+        2,
+        1
+      ],
+      "physical": [
+        "4",
+        "2",
+        "2"
+      ],
+      "operational": [
+        "2",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "model": "conversion",
+      "state": [
+        3,
+        2
+      ],
+      "physical": [
+        "12",
+        "3",
+        "6"
+      ],
+      "operational": [
+        "4",
+        "1",
+        "2"
+      ]
+    },
+    {
+      "model": "conversion",
+      "state": [
+        4,
+        3
+      ],
+      "physical": [
+        "24",
+        "4",
+        "12"
+      ],
+      "operational": [
+        "6",
+        "1",
+        "3"
+      ]
+    }
+  ],
+  "explicit_bound": {
+    "Delta": "2",
+    "K": "1",
+    "probability_lower_bound": "1/2",
+    "auxiliary_second_moment_bound": "1/6"
+  },
+  "random_retention_example": {
+    "mean_both": 0.5,
+    "gamma_fixed": 1.3068528194400546,
+    "gamma_random": 0.7960271956740641,
+    "b": 1
+  },
+  "scope": "Finite algebra and constants only. The code does not prove explosion, critical extinction, or historical novelty."
+}

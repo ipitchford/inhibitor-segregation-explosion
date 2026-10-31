@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate by its DOI."
+title: "Inhibitor segregation can make a nonexplosive reaction network explode"
+type: software
+authors:
+  - name: Anonymous
+version: 1.0.0-candidate
+doi: 10.5281/zenodo.23837953
+date-released: 2026-10-31
+repository-code: "https://github.com/ipitchford/inhibitor-segregation-explosion"
+url: "https://evidencepress.org/releases/inhibitor-segregation-explosion/"
+license:
+  - CC0-1.0
+  - MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23837953
+    description: "Version DOI (1.0.0-candidate)"
+  - type: doi
+    value: 10.5281/zenodo.23837952
+    description: "Concept DOI (all versions)"
+keywords:
+  - stochastic reaction networks
+  - compartment models
+  - explosion
+  - branching processes with catastrophes
+abstract: "Two two-species chemistries with no inflow, fusion or exit are nonexplosive alone but explode with positive probability when dividing compartments keep all substrate together and disperse the inhibitor. Sharp thresholds d + lambda E log Q < b (conversion) and b lambda (1 - E Q) > dc (catalysis), nonexplosive at equality; exact conditional laws; comparison with well-mixed removal; continuity at threshold; enclosure of an example probability. Unrefereed candidate; internal AI-assisted review only. Text and data CC0-1.0; code MIT."

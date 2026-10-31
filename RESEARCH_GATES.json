@@ -1,0 +1,175 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 31 October 2026 for release 1.0.0-candidate from the bounded prior-art gate of 28 October 2026, the round-1 internal reviews of 31 October 2026 (including Crossref/arXiv reference checks) and the reading of the source paper's arXiv text. It records the scrutiny performed, not historical priority.",
+ "contributionMap": [
+  {
+   "claim": "Two-species chemistries with no inflow reaction, no fusion and no exit that are nonexplosive alone but explode with positive probability under inhibitor-segregating division (restricted counterexample to Conjecture 3.6 of Anderson-Howells-Rojas La Luz 2026).",
+   "unit": "statement",
+   "paperLocation": "Theorems 3.1, 4.1",
+   "searches": [
+    {
+     "date": "2026-10-28",
+     "corpus": "live web search, arXiv records, publisher and author-hosted primary texts, Zenodo/DataCite records (bounded prior-art gate of the research bundle; summary PRIOR_ART.md)",
+     "query": "inhibitor segregation explosion compartment; Conjecture 3.6 Anderson Howells Rojas La Luz counterexample; stochastic reaction network compartment fragmentation explosion without inflow"
+    },
+    {
+     "date": "2026-10-31",
+     "corpus": "arXiv API, Crossref, DataCite, web search during internal review (domain and devil's-advocate reviews)",
+     "query": "citations of Anderson-Howells-Rojas La Luz 2026; Yoo 2026 Zenodo 10.5281/zenodo.22728357; compartment-induced explosion reaction networks"
+    }
+   ],
+   "closestPriorWork": "Yoo 2026 (counterexample to the unrestricted conjecture using enzyme inflow and fusion; no first-disproof claim made here)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Sharp thresholds d+lambda E log Q<b (conversion) and b lambda(1-EQ)>dc (catalysis), nonexplosive at equality, with exact conditional explosion laws and blow-up asymptotics.",
+   "unit": "statement",
+   "paperLocation": "Theorems 3.1-3.3, 4.1, 5.1, 5.2",
+   "searches": [
+    {
+     "date": "2026-10-28",
+     "corpus": "live web search, arXiv records, publisher and author-hosted primary texts, Zenodo/DataCite records (bounded prior-art gate of the research bundle; summary PRIOR_ART.md)",
+     "query": "branching process binomial disasters log threshold; Yule process scheduled removals; immigration binomial catastrophes random survival; linear birth-death random environment explosion time change"
+    }
+   ],
+   "closestPriorWork": "Hermann-Pfaffelhuber 2020 Cor. 2.7 and Kaplan-Sudbury-Nilsen 1975 (family survival threshold); Leskela-Robert-Simatos 2009/2010 (scheduled removals); Gallo-Roldan-Correa 2026 (random retention)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Bulk export versus well-mixed removal: strictly larger explosive region for conversion, identical for catalysis; monotonicity, continuity at threshold, bounded-leakage robustness; validated enclosure of the example probability.",
+   "unit": "statement",
+   "paperLocation": "Theorem 6.1, Corollary 6.2, Propositions 6.3-6.5, Section 7.1",
+   "searches": [
+    {
+     "date": "2026-10-31",
+     "corpus": "arXiv API, Crossref, DataCite, web search during internal review (domain and devil's-advocate reviews)",
+     "query": "well-mixed degradation versus division segregation explosion; Jensen log-mean catastrophe comparison; stochastic partitioning cell division heterogeneity"
+    }
+   ],
+   "closestPriorWork": "Log-mean versus mean dichotomy is classical for branching in random environment; the chemical comparison is new in the bounded search",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Operational time change, conditional linear birth-death formula, regeneration of immigration-catastrophe chains, Poisson-binomial scheduled-removal identity.",
+   "unit": "method",
+   "paperLocation": "Lemma 2.4, Lemma 3.4, Lemma 4.2, Section 4.3",
+   "searches": [
+    {
+     "date": "2026-10-28",
+     "corpus": "live web search, arXiv records, publisher and author-hosted primary texts, Zenodo/DataCite records (bounded prior-art gate of the research bundle; summary PRIOR_ART.md)",
+     "query": "Kendall generalized birth-and-death; Siegmund duality; Brockwell Gani Resnick catastrophe; Ben-Ari Roitershtein Schinazi random walk with catastrophes"
+    }
+   ],
+   "closestPriorWork": "Kendall 1948; Ethier-Kurtz 1986; Brockwell-Gani-Resnick 1982; Siegmund 1976; Asmussen-Sigman 1996",
+   "verdict": "known-cited"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Anderson, Howells, Rojas La Luz, Bull. Math. Biol. 88, 106 (2026); arXiv:2511.10223v4",
+   "usedFor": "Framework, admissible kernels, Conjecture 3.6, Observation 3.7",
+   "readWhat": "Sections 2.2 and 3.1.1 of the arXiv v4 text",
+   "date": "2026-10-31",
+   "evidenceLocator": "paper Sections 1.1, 2.1"
+  },
+  {
+   "citation": "Leskela, Robert, Simatos, Helsinki report A574 (2009)",
+   "usedFor": "Scheduled-removal summability criterion",
+   "readWhat": "Section 3, Propositions 3.4-3.5",
+   "date": "2026-10-28",
+   "evidenceLocator": "paper Section 3.2"
+  },
+  {
+   "citation": "Hermann, Pfaffelhuber, arXiv:1808.00073v2 (SPA 2020)",
+   "usedFor": "Binomial-disaster survival threshold",
+   "readWhat": "Definition 2.5, Theorem 2, Corollary 2.7",
+   "date": "2026-10-28",
+   "evidenceLocator": "paper Section 3.6"
+  },
+  {
+   "citation": "Gallo, Roldan-Correa, arXiv:2605.24671v1",
+   "usedFor": "Random retention at catastrophes",
+   "readWhat": "Section 2.2.1, Theorem 2.2",
+   "date": "2026-10-28",
+   "evidenceLocator": "paper Section 5"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Priority holds only within a bounded search; Yoo's full preprint not inspected.",
+   "closingQuestion": "Does an earlier source state these chemical embeddings?",
+   "triedOrSearched": "Searches of 28 and 31 October 2026 (see contributionMap).",
+   "estimatedCost": "days",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Exhaustive search out of scope; disclosed in Section 8.3.",
+   "whyNotClosedNow": "Full text unavailable; disclosed."
+  },
+  {
+   "limitation": "Molecule-blind (fair) division kernels not covered.",
+   "closingQuestion": "Is Conjecture 3.6 true for kernels splitting every molecule independently, without inflow and fusion?",
+   "triedOrSearched": "Reduction fails; discussed with the companion classification.",
+   "estimatedCost": "weeks",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "New research.",
+   "whyNotClosedNow": "New research beyond scope."
+  },
+  {
+   "limitation": "Catalytic explosion probability has no numerical tail bound.",
+   "closingQuestion": "Explicit tail bound for D_infinity - D_U.",
+   "triedOrSearched": "Simulations show slow convergence (Remark 4.3).",
+   "estimatedCost": "1 week",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Not needed for any theorem; stated.",
+   "whyNotClosedNow": "Not load-bearing."
+  },
+  {
+   "limitation": "Estimator error control only where Delta>0.",
+   "closingQuestion": "Tail bound near the sharp threshold.",
+   "triedOrSearched": "Validated enclosure covers the worked example.",
+   "estimatedCost": "days",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Stated in Section 7.2.",
+   "whyNotClosedNow": "Not load-bearing."
+  },
+  {
+   "limitation": "Empty daughters admissible and counted?",
+   "closingQuestion": "Does the source framework admit zero-content daughters?",
+   "triedOrSearched": "Read Section 2.2 of the source: state space includes the zero vector; kernels need only conserve mass.",
+   "estimatedCost": "10 min",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  }
+ ],
+ "extensionScout": {
+  "by": "internal reviewers (methodology, devil's advocate, editor, domain, perspective) and lead editor",
+  "date": "2026-10-31",
+  "proposals": [
+   "single-lineage reduction",
+   "bulk versus well-mixed removal comparison",
+   "monotonicity and continuity at threshold",
+   "certified explosion probability",
+   "bounded substrate leakage",
+   "degradation channel",
+   "molecule-blind allocation",
+   "capped regularisation",
+   "finite-level hitting probabilities"
+  ],
+  "actions": [
+   "added Proposition 2.2",
+   "added Theorem 6.1, Corollary 6.2, Proposition 6.3",
+   "added Proposition 6.4",
+   "added Section 7.1 validated enclosure",
+   "added Proposition 6.5",
+   "included in Theorem 6.1",
+   "left open (Section 8.2)",
+   "not attempted",
+   "not attempted"
+  ]
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "schemaVersion": "1.0",
+ "release": "inhibitor-segregation-explosion",
+ "version": "1.0.0-candidate",
+ "doi": "10.5281/zenodo.23837953",
+ "conceptDoi": "10.5281/zenodo.23837952",
+ "creator": "Anonymous",
+ "status": "unrefereed candidate",
+ "model": "Compartment model of Anderson-Howells-Rojas La Luz (2026) with no inflow, exit or coagulation; each compartment runs a two-species chemistry in S (substrate) and I (inhibitor); a compartment with s substrate molecules divides at rate lambda*s; one daughter keeps all S and, given a fresh Q in [0,1], each I independently with probability Q; minimal continuous-time Markov chain; explosion = infinitely many events in finite time.",
+ "claims": [
+  {
+   "id": "C1",
+   "kind": "proposition",
+   "location": "Proposition 2.2",
+   "statement": "If every reaction has S in its source complex and the kernel keeps all S in one daughter, the compartment model explodes iff the single active-compartment chain with export transitions at rate lambda*S(x) times the substrate-daughter kernel explodes.",
+   "evidence": "written proof"
+  },
+  {
+   "id": "C2",
+   "kind": "theorem",
+   "location": "Theorem 3.1",
+   "statement": "Conversion inhibition (2S->3S at b s(s-1), S->S+I at c s, S+I->2I at d s i, d>b), fixed retention p, s0>=2: the isolated chemistry is nonexplosive; the compartment model explodes with positive probability iff d+lambda*log p<b (always if p=0); nonexplosive at equality and for p=1; P(T<inf | marked environment)=P(K<s0-1) with K a sum of independent Bernoulli(exp(-b tau_j)) over conversion times tau_j.",
+   "evidence": "written proof; verification/checks.py"
+  },
+  {
+   "id": "C3",
+   "kind": "theorem",
+   "location": "Theorem 3.2",
+   "statement": "If Delta=b+lambda(1-p)-d>0 then P(T<inf)>=1-d(i0+c/b)/(Delta(s0-1)); equals 1/2 for b=c=1,d=2,lambda=3,p=0,(s0,i0)=(3,0).",
+   "evidence": "written proof; verification/checks.py"
+  },
+  {
+   "id": "C4",
+   "kind": "theorem",
+   "location": "Theorem 3.3",
+   "statement": "Almost surely on explosion (conversion): (T-t)S(t)->1/b, C(t)/log(1/(T-t))->lambda/b, I_tot(t)/S(t)->0.",
+   "evidence": "written proof"
+  },
+  {
+   "id": "C5",
+   "kind": "theorem",
+   "location": "Theorem 4.1",
+   "statement": "Catalytic inhibition (I+2S->I+S at d i s(s-1)): explosion with positive probability iff b*lambda*(1-p)>d*c; equality nonexplosive; P(T<inf | I)=1-(1-1/(b D_inf))^(s0-1); logarithmic blow-up asymptotics.",
+   "evidence": "written proof; verification/checks.py"
+  },
+  {
+   "id": "C6",
+   "kind": "theorem",
+   "location": "Theorems 5.1-5.2",
+   "statement": "Random retention: conversion threshold d+lambda*E log Q<b (extended expectation, log 0=-inf); catalytic threshold b*lambda*(1-EQ)>dc; equality nonexplosive.",
+   "evidence": "written proof"
+  },
+  {
+   "id": "C7",
+   "kind": "theorem",
+   "location": "Theorem 6.1, Corollary 6.2, Proposition 6.3",
+   "statement": "With an added well-mixed degradation S+I->S at delta s i: conversion threshold d-delta+lambda E log Q<b. Removing inhibitor at the same mean rate by degradation instead of division gives the strictly smaller explosive region lambda(1-EQ)>d-b; for catalysis the thresholds coincide.",
+   "evidence": "written proof"
+  },
+  {
+   "id": "C8",
+   "kind": "proposition",
+   "location": "Proposition 6.4",
+   "statement": "Explosion probability is nonincreasing in coupled retention and nondecreasing in lambda, and tends to 0 as p increases to either critical value.",
+   "evidence": "written proof"
+  },
+  {
+   "id": "C9",
+   "kind": "proposition",
+   "location": "Proposition 6.5",
+   "statement": "Conversion family: explosion with positive probability persists if each division may leak up to K substrate molecules, whenever d+lambda E log Q<b.",
+   "evidence": "written proof"
+  },
+  {
+   "id": "C10",
+   "kind": "computation",
+   "location": "Section 7.1",
+   "statement": "For b=c=1,d=2,lambda=3,p=0,i0=0: P(T<inf) in [0.58865,0.58870] (s0=2), [0.79744,0.79751] (s0=3), [0.88702,0.88709] (s0=4).",
+   "evidence": "enclosure/enclose_explosion.py; rounding argument written, not machine-checked"
+  },
+  {
+   "id": "C11",
+   "kind": "numerical",
+   "location": "Section 7.2",
+   "statement": "Monte Carlo estimate 0.7967965 with 95% Hoeffding interval [0.79366,0.79984] for the s0=3 example, assuming exact independent sampling.",
+   "evidence": "verification/estimate_explosion.py"
+  }
+ ],
+ "notClaimed": [
+  "first disproof of Conjecture 3.6 (Yoo 2026 is earlier)",
+  "results for molecule-blind division kernels",
+  "novelty of the classical probabilistic components",
+  "physical or laboratory explosion",
+  "external peer review, independent reproduction or formal verification"
+ ]
+}

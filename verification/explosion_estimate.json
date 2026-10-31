@@ -1,0 +1,31 @@
+{
+  "model": {
+    "b": 1,
+    "c": 1,
+    "d": 2,
+    "lambda": 3,
+    "p": 0,
+    "initial_s": 3,
+    "initial_i": 0
+  },
+  "samples": 200000,
+  "operational_horizon": 10.0,
+  "seed": 20261028,
+  "numpy_version": "2.3.5",
+  "estimator": "Poisson-binomial P(K_U < 2), conditional on inhibitor environment",
+  "sample_mean": 0.7967964764786037,
+  "sample_sd": 0.3092055445436983,
+  "deterministic_upper_bound_on_truncation_bias": 9.079779837134727e-05,
+  "confidence_level": 0.95,
+  "hoeffding_sampling_radius": 0.0030368073095415255,
+  "confidence_interval_for_true_explosion_probability": [
+    0.7936688713706909,
+    0.7998332837881452
+  ],
+  "analytical_lower_bound": "1/2",
+  "simulated_environment_events": 11578531,
+  "simulated_conversion_events": 3581288,
+  "max_event_iterations_for_any_sample": 10306,
+  "max_observed_inhibitor_count": 10234,
+  "claim_limit": "The interval combines a proved truncation bound with a Hoeffding sampling bound; numerical random generation and floating-point arithmetic are not formally verified."
+}

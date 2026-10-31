@@ -1,0 +1,10 @@
+[project]
+name = "inhibitor-segregation-explosion"
+version = "1.0.0rc0"
+description = "Replay environment for the NumPy checks and the figure (the default exact checks need only the Python standard library)."
+requires-python = ">=3.11,<3.12"
+dependencies = ["numpy==2.3.5", "matplotlib==3.10.8"]
+license = "MIT"
+
+[tool.uv]
+package = false

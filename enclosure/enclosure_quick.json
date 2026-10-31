@@ -1,0 +1,44 @@
+{
+  "model": {
+    "b": 1.0,
+    "c": 1.0,
+    "d": 2.0,
+    "lam": 3.0,
+    "p": 0.0,
+    "i0": 0
+  },
+  "grid": {
+    "N": 150,
+    "U": 16.0,
+    "h0": 0.002,
+    "hmax": 0.015625
+  },
+  "results": {
+    "s0=3": {
+      "lower": 0.7968798919437368,
+      "upper": 0.7980864223576979,
+      "width": 0.0012065304139611266,
+      "time_steps": 1977
+    }
+  },
+  "checks": {
+    "inside_published_claims": {
+      "s0=3": [
+        0.7965,
+        0.7985
+      ]
+    },
+    "above_analytic_bound_one_half": true,
+    "meets_monte_carlo_interval": [
+      0.7936688713706909,
+      0.7998332837881452
+    ]
+  },
+  "negative_controls": {
+    "division_rate_2.5_rejected": true,
+    "conversion_rate_2.25_rejected": true,
+    "shifted_claim_rejected": true
+  },
+  "status": "PASS",
+  "claim_limit": "Two-sided bounds from monotone comparisons, uniformisation with an added Poisson tail, exact dyadic time steps, decimal (50-digit) exponentials, weights and payoffs with conservative conversion, and an outward relative factor 1e-13 per floating-point operator step; the rounding argument (enclose_core.py docstring and manuscript Section 7.1) covers p = 0, N <= 2000, steps <= 1/64 and assumes IEEE-754 binary64 arithmetic with correctly rounded basic operations. Written out, not machine-checked."
+}

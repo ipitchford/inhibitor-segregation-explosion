@@ -1,0 +1,65 @@
+{
+  "model": {
+    "b": 1.0,
+    "c": 1.0,
+    "d": 2.0,
+    "lam": 3.0,
+    "p": 0.0,
+    "i0": 0
+  },
+  "grid": {
+    "N": 800,
+    "U": 18.0,
+    "h0": 5e-05,
+    "hmax": 0.01
+  },
+  "results": {
+    "s0=2": {
+      "lower": 0.5886506220730485,
+      "upper": 0.5886993136110611,
+      "width": 4.8691538012568536e-05,
+      "time_steps": 59148
+    },
+    "s0=3": {
+      "lower": 0.7974426184094163,
+      "upper": 0.7975010327120302,
+      "width": 5.841430261388503e-05,
+      "time_steps": 59148
+    },
+    "s0=4": {
+      "lower": 0.8870219684198184,
+      "upper": 0.8870853969063983,
+      "width": 6.342848657991951e-05,
+      "time_steps": 59148
+    }
+  },
+  "checks": {
+    "inside_published_claims": {
+      "s0=2": [
+        0.58865,
+        0.5887
+      ],
+      "s0=3": [
+        0.79744,
+        0.79751
+      ],
+      "s0=4": [
+        0.88702,
+        0.88709
+      ]
+    },
+    "above_analytic_bound_one_half": true,
+    "meets_monte_carlo_interval": [
+      0.7936688713706909,
+      0.7998332837881452
+    ],
+    "increasing_in_s0": true
+  },
+  "negative_controls": {
+    "division_rate_2.5_rejected": true,
+    "conversion_rate_2.25_rejected": true,
+    "shifted_claim_rejected": true
+  },
+  "status": "PASS",
+  "claim_limit": "Two-sided bounds from monotone comparisons, uniformisation with an added Poisson tail, exact dyadic time steps, decimal (50-digit) exponentials, weights and payoffs with conservative conversion, and an outward relative factor 1e-13 per floating-point operator step; the rounding argument (enclose_core.py docstring and manuscript Section 7.1) covers p = 0, N <= 2000, steps <= 1/64 and assumes IEEE-754 binary64 arithmetic with correctly rounded basic operations. Written out, not machine-checked."
+}

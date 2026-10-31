@@ -1,0 +1,3 @@
+# Sources
+
+All cited works are in the paper's bibliography and [CITATION_AUDIT.md](CITATION_AUDIT.md). The source paper (Anderson, Howells and Rojas La Luz, arXiv:2511.10223v4) was read for its framework (Section 2.2), Conjecture 3.6 and Observation 3.7. Leskelä, Robert and Simatos (report A574, Section 3), Hermann and Pfaffelhuber (arXiv:1808.00073v2) and Gallo and Roldán-Correa (arXiv:2605.24671v1) were read in full text for the components used. Yoo's preprint (Zenodo 10.5281/zenodo.22728357) could not be inspected beyond its record and the author's account. No third-party text is redistributed. See also [PRIOR_ART.md](PRIOR_ART.md).

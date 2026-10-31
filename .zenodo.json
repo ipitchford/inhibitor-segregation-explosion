@@ -1,0 +1,108 @@
+{
+  "title": "Inhibitor segregation can make a nonexplosive reaction network explode",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "<p><strong>Unrefereed research candidate.</strong> A stochastic chemical system explodes when infinitely many reaction events occur in finite time. Anderson, Howells and Rojas La Luz (2026) conjectured that a nonexplosive chemistry stays nonexplosive inside dividing compartments and pointed to inflow reactions as the main danger. This package gives two two-species chemistries with no inflow reaction, no compartment fusion and no exit that are nonexplosive alone but explode with positive probability when compartments divide at rate &lambda;s, keep all substrate in one daughter and retain each inhibitor with probability Q (fresh at each division). For conversion inhibition (2S&rarr;3S, S&rarr;S+I, S+I&rarr;2I) the sharp condition is d+&lambda;E[log Q]&lt;b; for catalytic inhibition (I+2S&rarr;I+S) it is b&lambda;(1&minus;EQ)&gt;dc; both boundaries are nonexplosive. Also proved: exact conditional explosion laws, blow-up asymptotics, monotonicity and continuity at threshold, robustness to bounded substrate leakage, and a comparison with well-mixed degradation showing a strictly larger explosive region for bulk export of a self-reproducing inhibitor and the same threshold for a catalytic one. For a three-molecule example the explosion probability is at least 1/2 and lies in [0.79744, 0.79751].</p><p>The archive contains the 24-page manuscript (PDF and LaTeX), exact rational checks, a Monte Carlo estimator, a two-sided enclosure program, a replay runner, semantic negative controls, CI and SHA-256 sums. Assurance: written proofs and computational checks; internal AI-assisted review only (not peer review, independent reproduction or formal verification). The probabilistic components are classical and cited; Yoo (2026) reported an earlier counterexample to the unrestricted conjecture using inflow and fusion. Creator: Anonymous. Text and data CC0-1.0; code MIT.</p>",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "version": "1.0.0-candidate",
+  "publication_date": "2026-10-31",
+  "access_right": "open",
+  "license": "cc-zero",
+  "keywords": [
+    "stochastic reaction networks",
+    "compartment models",
+    "explosion",
+    "cell division",
+    "branching processes with catastrophes",
+    "Yule process",
+    "random time change",
+    "birth-death processes"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/inhibitor-segregation-explosion/tree/v1.0.0-candidate",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://evidencepress.org/releases/inhibitor-segregation-explosion/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1007/s11538-026-01659-7",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.22728357",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.23505123",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1239/aap/1282924065",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1016/j.spa.2019.07.011",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.2307/3212406",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1214/EJP.v18-2774",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "2605.24671",
+      "relation": "references",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "10.2307/1427020",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1017/S0269964815000297",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1214/aoms/1177730285",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.2307/3213163",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1038/ng.729",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1002/9780470316658",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "AI-assisted research; internal AI-assisted review only. Code is MIT-licensed; text and data CC0-1.0."
+}

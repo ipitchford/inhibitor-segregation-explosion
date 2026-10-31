@@ -1,0 +1,4 @@
+Local clean replay (31 October 2026): macOS 27 (arm64), CPython 3.11 via uv; NumPy 2.3.5 and Matplotlib 3.10.8 pinned in uv.lock. Run through the shared local research queue.
+Default exact checks: python3 run_checks.py (standard library only; identical under -O). Optional: --numpy (estimator, quick enclosure), --full (full enclosure). Negative controls: python3 negative_controls.py.
+CI: GitHub Actions ubuntu-latest, Python 3.11 (.github/workflows/replay.yml): SHA256SUMS, exact checks in normal and -O modes, NumPy checks, negative controls, unchanged working tree.
+LaTeX: pdfTeX (TeX Live 2026), three passes. Figure: manuscript/phase_figure.py with Matplotlib 3.10.8.
